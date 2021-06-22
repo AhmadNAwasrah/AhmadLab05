@@ -66,7 +66,8 @@ class DemoNavbar extends React.Component {
 
   render() {
     return (
-      <>
+    <>
+           
         <header className="header-global">
           <Navbar
             className="navbar-main navbar-transparent navbar-light headroom"
@@ -114,7 +115,7 @@ class DemoNavbar extends React.Component {
                       <i className="ni ni-ui-04 d-lg-none mr-1" />
                       <span className="nav-link-inner--text">Components</span>
                     </DropdownToggle>
-                    <DropdownMenu className="dropdown-menu-xl">
+                    {/* <DropdownMenu className="dropdown-menu-xl">
                       <div className="dropdown-menu-inner">
                         <Media
                           className="d-flex align-items-center"
@@ -171,12 +172,12 @@ class DemoNavbar extends React.Component {
                           </Media>
                         </Media>
                       </div>
-                    </DropdownMenu>
+                    </DropdownMenu> */}
                   </UncontrolledDropdown>
                   <UncontrolledDropdown nav>
                     <DropdownToggle nav>
                       <i className="ni ni-collection d-lg-none mr-1" />
-                      <span className="nav-link-inner--text">Examples</span>
+                      <span className="nav-link-inner--text">Menue</span>
                     </DropdownToggle>
                     <DropdownMenu>
                       <DropdownItem to="/landing-page" tag={Link}>
@@ -198,20 +199,21 @@ class DemoNavbar extends React.Component {
                   <NavItem>
                     <NavLink
                       className="nav-link-icon"
-                      href="https://www.facebook.com/creativetim"
+                      //href="https://www.linkedin.com/in/ahmad-nawasreh-556b401b4/"
+                      href="https://www.linkedin.com/in/ahmad-nawasreh-556b401b4/"
                       id="tooltip333589074"
                       target="_blank"
                     >
-                      <i className="fa fa-facebook-square" />
+                      <i className="fab fa-linkedin" />
                       <span className="nav-link-inner--text d-lg-none ml-2">
-                        Facebook
+                      linkedin
                       </span>
                     </NavLink>
                     <UncontrolledTooltip delay={0} target="tooltip333589074">
-                      Like us on Facebook
+                      Like us on linkedin
                     </UncontrolledTooltip>
                   </NavItem>
-                  <NavItem>
+                  {/* <NavItem>
                     <NavLink
                       className="nav-link-icon"
                       href="https://www.instagram.com/creativetimofficial"
@@ -238,15 +240,15 @@ class DemoNavbar extends React.Component {
                       <span className="nav-link-inner--text d-lg-none ml-2">
                         Twitter
                       </span>
-                    </NavLink>
+                    </NavLink> }
                     <UncontrolledTooltip delay={0} target="tooltip184698705">
                       Follow us on Twitter
-                    </UncontrolledTooltip>
-                  </NavItem>
+                    </UncontrolledTooltip>*/
+                  <NavItem>
                   <NavItem>
                     <NavLink
                       className="nav-link-icon"
-                      href="https://github.com/creativetimofficial/argon-design-system-react"
+                      href="https://github.com/AhmadNAwasrah"
                       id="tooltip112445449"
                       target="_blank"
                     >
@@ -260,7 +262,7 @@ class DemoNavbar extends React.Component {
                     </UncontrolledTooltip>
                   </NavItem>
                   <NavItem className="d-none d-lg-block ml-lg-4">
-                    <Button
+                    {/* <Button
                       className="btn-neutral btn-icon"
                       color="default"
                       href="https://www.creative-tim.com/product/argon-design-system-react?ref=adsr-navbar"
@@ -272,9 +274,11 @@ class DemoNavbar extends React.Component {
                       <span className="nav-link-inner--text ml-1">
                         Download
                       </span>
-                    </Button>
+                    </Button> */}
                   </NavItem>
-                </Nav>
+                
+                  </NavItem>
+  }</Nav>
               </UncontrolledCollapse>
             </Container>
           </Navbar>
